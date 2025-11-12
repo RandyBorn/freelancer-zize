@@ -91,8 +91,7 @@ export default function ProjectsPage() {
 
         <h1 className="text-3xl font-bold text-center">Ausgewählte Projekte</h1>
         <p className="mt-2 text-center text-white/70">
-          Live-Demos & Repos – von One-Pager & Mini-Games bis zu Fullstack &
-          APIs.
+          Live-Demos & Repos von One-Pager & Mini-Games bis zu Fullstack & APIs.
         </p>
 
         <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
