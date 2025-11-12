@@ -20,8 +20,8 @@ export default async function ContactPage({
   const FORMSUBMIT_ACTION =
     "https://formsubmit.co/a27463617d1626078784687e053c2685";
 
-  // ✅ ABSOLUTER Redirect nach Erfolg (👉 DEINE VERCEL-URL einsetzen!)
-  const REDIRECT_URL = "https://DEIN-PROJEKT.vercel.app/contact?success=1";
+  // ✅ ABSOLUTER Redirect nach Erfolg → deine Vercel-URL
+  const REDIRECT_URL = "https://freelancer-zize.vercel.app/contact?success=1";
 
   const email = "Randyborn677@yahoo.com";
 
@@ -101,11 +101,22 @@ export default async function ContactPage({
             <input
               type="hidden"
               name="_subject"
-              value="Kontakt über Website – Projektanfrage"
+              value="Neue Projektanfrage über freelancer-zize.vercel.app"
             />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value={REDIRECT_URL} />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Danke für deine Nachricht! Ich melde mich innerhalb von 24 Stunden. – Randy"
+            />
+            {/* Reply-To auf Absender setzen */}
+            <input type="hidden" name="_replyto" value="{{email}}" />
+            {/* optional: Kopie an zweite Adresse */}
+            {/* <input type="hidden" name="_cc" value="zweite.mail@beispiel.de" /> */}
+            {/* Quelle/Tracking (optional) */}
+            <input type="hidden" name="source" value="contact-page" />
 
             {/* Honeypot (Spam-Schutz) */}
             <input
@@ -183,7 +194,14 @@ export default async function ContactPage({
 
             <p className="text-xs text-white/60">
               Mit dem Senden akzeptierst du die Verarbeitung deiner Angaben zur
-              Beantwortung der Anfrage.
+              Beantwortung der Anfrage. <span className="mx-1">·</span>
+              <a href="/impressum" className="underline">
+                Impressum
+              </a>{" "}
+              /{" "}
+              <a href="/datenschutz" className="underline">
+                Datenschutz
+              </a>
             </p>
           </form>
         </div>
