@@ -50,7 +50,7 @@ export default function ContactPage() {
           <h1 className="text-3xl font-bold">Kontakt & Buchung</h1>
           <p className="mt-3 text-white/80">
             Am schnellsten per E-Mail. Schick mir kurz Ziel, Deadline und was
-            schon da ist – dann klären wir alles in einem 15-Minuten-Call.
+            schon da ist dann klären wir alles in einem 15-Minuten-Call.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 E-Mail starten
               </a>
               <Link
-                href="/projects" /* falls dein Pfad /projekte ist: einfach ändern */
+                href="/projekte" /* falls dein Pfad /projekte ist: einfach ändern */
                 className="inline-flex items-center justify-center rounded-md border border-white/20 bg-white/10 px-4 py-2.5 font-semibold text-white hover:bg-white/15"
               >
                 Projekte ansehen
