@@ -37,7 +37,7 @@ export default async function ContactPage({
         <nav className="mb-8">
           <Link
             href="/"
-            className="underline text-white/80 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded"
+            className=" text-white/80 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded"
           >
             ← Zur Startseite
           </Link>
@@ -61,7 +61,7 @@ export default async function ContactPage({
         )}
 
         {/* Kontakt-Box (Links + Formular) */}
-        <div className="grid gap-6 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="grid gap-6 rounded-2xl border border-white/10 bg-white/7 p-6">
           {/* Direkt per Mail öffnen */}
           <div>
             <p className="text-sm uppercase tracking-wide text-white/60">
@@ -109,7 +109,7 @@ export default async function ContactPage({
             <input
               type="hidden"
               name="_autoresponse"
-              value="Danke für deine Nachricht! Ich melde mich innerhalb von 24 Stunden. – Randy"
+              value="Danke für deine Nachricht! Ich melde mich innerhalb von 24 Stunden. Randy"
             />
             {/* Reply-To auf Absender setzen */}
             <input type="hidden" name="_replyto" value="{{email}}" />
@@ -161,7 +161,7 @@ export default async function ContactPage({
               <select
                 id="paket"
                 name="paket"
-                className="w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white outline-none focus:border-amber-300"
+                className="w-full rounded-md border border-white bg-amber-50/10 px-3 py-2 text-blue-600 outline-none focus:border-amber-300"
                 defaultValue="One-Pager (499 €)"
               >
                 <option>One-Pager (499 €)</option>
