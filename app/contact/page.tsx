@@ -47,8 +47,8 @@ export default async function ContactPage({
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Kontakt & Buchung</h1>
           <p className="mt-3 text-white/80">
-            Schreib mir kurz Ziel, Deadline und was schon da ist – dann klären
-            wir alles in einem 15-Minuten-Call.
+            Schreib mir kurz Ziel, Deadline und was schon da ist dann klären wir
+            alles in einem 15-Minuten-Call.
           </p>
         </div>
 
@@ -214,7 +214,7 @@ export default async function ContactPage({
               <p className="font-medium">One-Pager</p>
               <p className="text-white/80 text-sm">
                 Eine einseitige Website (Hero, Leistungen, Kontakt). Ideal für
-                schnelle Sichtbarkeit – später erweiterbar.
+                schnelle Sichtbarkeit später erweiterbar.
               </p>
             </li>
             <li>
